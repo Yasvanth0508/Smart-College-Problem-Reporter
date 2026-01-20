@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
 import { Mail, Lock, Loader2, AlertCircle, ChevronRight } from 'lucide-react';
-import { API_BASE_URL } from '../config/api';
+
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 interface LoginResponse {
   token: string;
